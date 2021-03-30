@@ -29,6 +29,9 @@ while cagnotte > 0 and continuer == "o":
 		cagnotte = cagnotte+sommeMise+gains
 		print ("Vous avez gagné",str(gains),"euros.\nVotre cagnotte est à",str(cagnotte),"euros actuellement.")
 		continuer = input("Voulez-vous continuer ? [o/n] ")
+		#bloquer le choix à o ou n
+		while continuer != "n" and continuer != "o" :
+			continuer = input("Voulez-vous continuer ? [o/n] ")
 		clear()
 	#le cas de la même couleur
 	elif ((numeroChoisi % 2 == 0) and (numeroGagnant % 2 == 0)) or ((numeroChoisi % 2 == 1) and (numeroGagnant % 2 == 1)):
@@ -37,6 +40,8 @@ while cagnotte > 0 and continuer == "o":
 		cagnotte = cagnotte+sommeMise+gains
 		print ("Vous avez gagné",str(gains),"euros.\nVotre cagnotte est à",str(cagnotte),"euros actuellement.")
 		continuer = input("Voulez-vous continuer ? [o/n] ")
+		while continuer != "n" and continuer != "o" :
+			continuer = input("Voulez-vous continuer ? [o/n] ")
 		clear()
 	#perte
 	else :
@@ -46,6 +51,8 @@ while cagnotte > 0 and continuer == "o":
 			clear()
 			break
 		continuer = input("Voulez-vous continuer ? [o/n] ")
+		while continuer != "n" and continuer != "o" :
+			continuer = input("Voulez-vous continuer ? [o/n] ")
 		clear()
 if cagnotte == 0 :
 	print ("Vous n'avez plus d'argent... Revenez le mois prochain après le salaire !")

@@ -18,3 +18,5 @@ f2 = open ("Demi.txt","r")
 f = open ("La_mesure_de_lhomme.txt","r")
 for line in f :
 	print(line)
+f.close()
+f2.close()

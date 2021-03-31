@@ -23,6 +23,7 @@ print(tableau_jeu)
 nombre = int(input("Mettez un nombre : "))
 trouve = False
 for j in range (0, len(tableau_jeu)) :
+	print (tableau_jeu[j])
 	if nombre < tableau_jeu[j] :
 		break
 	if nombre == tableau_jeu[j] :
